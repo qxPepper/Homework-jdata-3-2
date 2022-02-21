@@ -13,8 +13,8 @@ public class MyController {
         this.myService = myService;
     }
 
-    @GetMapping("/products/fetch-product")
-    public List<String> getProductName(@RequestParam(value = "name") String name) {
-        return myService.getProductName(name);
+    @GetMapping("/persons/by-city")
+    public List<String> getPersonsByCity(@RequestParam(value = "city") String city) {
+        return myService.getPersonsByCity(city);
     }
 }
